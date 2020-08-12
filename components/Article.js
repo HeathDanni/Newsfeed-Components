@@ -132,5 +132,9 @@ function articleMaker(articleObject) {
   articleDiv.appendChild('articlePara2');
   articleDiv.appendChild('articleSpan');
 
+  articleDiv.classList.add('article');
+  articleDate.classList.add('date');
+  articleSpan.classList.add('expandButton');
+
     return articleDiv;
 }
