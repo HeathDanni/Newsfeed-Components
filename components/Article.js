@@ -114,3 +114,23 @@ const data = [
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+
+function articleMaker(articleObject) {
+
+  const articleDiv = document.createElement('div');
+  const articleHeading = document.createElement('h1');
+  const articleDate = document.createElement('p');
+  const articlePara0 = document.createElement('p');
+  const articlePara1 = document.createElement('p');
+  const articlePara2 = document.createElement('p');
+  const articleSpan = document.createElement('span');
+  
+  articleDiv.appendChild('articleHeading');
+  articleDiv.appendChild('articleDate');
+  articleDiv.appendChild('articlePara0');
+  articleDiv.appendChild('articlePara1');
+  articleDiv.appendChild('articlePara2');
+  articleDiv.appendChild('articleSpan');
+
+    return articleDiv;
+}
