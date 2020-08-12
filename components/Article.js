@@ -136,9 +136,21 @@ function articleMaker(articleObject) {
   articleDate.classList.add('date');
   articleSpan.classList.add('expandButton');
 
+  articleHeading.textContent = articleObject.title;
+  articleDate.textContent = articleObject.date;
+  articlePara0.textContent = articleObject.firstParagraph;
+  articlePara1.textContent = articleObject.secondParagraph;
+  articlePara2.textContent = articleObject.thirdParagraph;
+
   articleSpan.addEventListener('click', () => {
     articleDiv.classList.toggle('article-open');
   })
 
     return articleDiv;
 }
+
+const articles = document.querySelector('.articles');
+
+data.map((data) => {
+  articles.appendChild(articleMaker(data));
+})
