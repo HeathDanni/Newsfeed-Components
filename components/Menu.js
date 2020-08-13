@@ -44,11 +44,11 @@ function menuMaker(data) {
   menuDiv.classList.add('menu');
   menuDiv.appendChild(menuList);
 
-  // data.map((el) => {
-  //   menuItem.textContent = el;
-  // });
+  const menuBtn = document.querySelector(".menu-button");
 
-  // menuList.appendChild(menuItem);
+  menuBtn.addEventListener('click', () => {
+    menuDiv.classList.toggle('menu--open');
+  })
   
   return menuDiv;
 }
