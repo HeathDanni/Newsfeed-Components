@@ -86,7 +86,15 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-  }
+  },
+
+   {
+     title: 'My new article',
+     date: 'July 3rd, 2020',
+     firstParagraph: `This is a new article.`,
+     secondParagraph: `I made this article`,
+     thirdParagraph: `This article should show on the page.`
+   }
 ];
 
 /*
@@ -155,3 +163,4 @@ const articles = document.querySelector('.articles');
 data.map((data) => {
   articles.appendChild(articleMaker(data));
 });
+
