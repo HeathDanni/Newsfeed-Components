@@ -125,12 +125,12 @@ function articleMaker(articleObject) {
   const articlePara2 = document.createElement('p');
   const articleSpan = document.createElement('span');
   
-  articleDiv.appendChild('articleHeading');
-  articleDiv.appendChild('articleDate');
-  articleDiv.appendChild('articlePara0');
-  articleDiv.appendChild('articlePara1');
-  articleDiv.appendChild('articlePara2');
-  articleDiv.appendChild('articleSpan');
+  articleDiv.appendChild(articleHeading);
+  articleDiv.appendChild(articleDate);
+  articleDiv.appendChild(articlePara0);
+  articleDiv.appendChild(articlePara1);
+  articleDiv.appendChild(articlePara2);
+  articleDiv.appendChild(articleSpan);
 
   articleDiv.classList.add('article');
   articleDate.classList.add('date');
@@ -153,4 +153,4 @@ const articles = document.querySelector('.articles');
 
 data.map((data) => {
   articles.appendChild(articleMaker(data));
-})
+});
