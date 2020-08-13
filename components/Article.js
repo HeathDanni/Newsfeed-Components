@@ -141,6 +141,7 @@ function articleMaker(articleObject) {
   articlePara0.textContent = articleObject.firstParagraph;
   articlePara1.textContent = articleObject.secondParagraph;
   articlePara2.textContent = articleObject.thirdParagraph;
+  articleSpan.textContent = '+';
 
   articleSpan.addEventListener('click', () => {
     articleDiv.classList.toggle('article-open');
