@@ -150,7 +150,9 @@ function articleMaker(articleObject) {
   articlePara1.textContent = articleObject.secondParagraph;
   articlePara2.textContent = articleObject.thirdParagraph;
   articleSpan.textContent = '+';
-  
+
+  articleHeading.style.marginTop = '0px';
+
   articleSpan.addEventListener('click', () => {
     articleDiv.classList.toggle('article-open');
   })
@@ -163,4 +165,3 @@ const articles = document.querySelector('.articles');
 data.map((data) => {
   articles.appendChild(articleMaker(data));
 });
-
